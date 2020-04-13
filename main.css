@@ -106,6 +106,8 @@ body {
   letter-spacing: 1px;
   width: 100%;
   display: block;
+  border:1px solid rgb(199, 153, 204);
+  outline: none;
   background: rgb(199, 153, 204);
   background: linear-gradient(
     90deg,
@@ -117,4 +119,13 @@ body {
 
 .form button:hover {
   cursor: pointer;
+}
+
+
+@media(max-width:500px){
+  .container{
+    margin: 20px;
+  }
+
+  
 }
