@@ -98,7 +98,7 @@ body {
   -webkit-box-shadow: 0px 1px 5px 0px rgba(125, 111, 125, 0.75);
   -moz-box-shadow: 0px 1px 5px 0px rgba(125, 111, 125, 0.75);
   box-shadow: 0px 1px 5px 0px rgba(125, 111, 125, 0.75);
-
+  border-radius: 3px;
   color: white;
   font-size: 17px;
   padding: 10px;
@@ -106,7 +106,7 @@ body {
   letter-spacing: 1px;
   width: 100%;
   display: block;
-  border:1px solid rgb(199, 153, 204);
+  border:1px solid rgb(219, 130, 212);
   outline: none;
   background: rgb(199, 153, 204);
   background: linear-gradient(
