@@ -7,12 +7,35 @@
 }
 
 body {
-  background-color: #ccaed6;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url("img/asteroids.jpg");
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+article {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+.information {
+  width: 40vw;
+  color: white;
+  padding: 40px;
+  word-wrap: break-word;
+}
+.information h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.information h4 {
+  margin-bottom: 30px;
+  text-align: justify;
+  line-height: 150%;
+  font-weight: 400;
 }
 
 .container {
@@ -20,14 +43,13 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  width: 400px;
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(125, 111, 125, 1);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(125, 111, 125, 1);
-  box-shadow: 0px 0px 10px 1px rgba(125, 111, 125, 1);
+  width: 350px;
+  color: rgb(29, 28, 28);
 }
 
 .form {
-  padding: 40px 50px;
+  padding: 35px 40px;
+  background-color: rgba(250, 250, 250);
 }
 
 .form-control {
@@ -44,7 +66,7 @@ body {
 }
 
 .form-control input {
-  border: 2px solid #d1cece;
+  border: 1px solid #d1cece;
   border-radius: 4px;
   display: block;
   font-size: 13px;
@@ -54,11 +76,11 @@ body {
 
 .form-control input:focus {
   border-color: rgb(116, 111, 111);
-   outline: none;
+  outline: none;
 }
 
 .form-control.success input {
-  border-color: #2dc26b;
+  border-color: #84bd72;
 }
 
 .form-control.error input {
@@ -74,7 +96,7 @@ body {
 }
 
 .form-control.success i.fa-check-circle {
-  color: #2dc26b;
+  color: #84bd72;
   visibility: visible;
 }
 
@@ -100,32 +122,60 @@ body {
   box-shadow: 0px 1px 5px 0px rgba(125, 111, 125, 0.75);
   border-radius: 3px;
   color: white;
-  font-size: 17px;
+  font-size: 16px;
   padding: 10px;
   margin-top: 22px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   width: 100%;
   display: block;
-  border:1px solid rgb(219, 130, 212);
   outline: none;
-  background: rgb(199, 153, 204);
-  background: linear-gradient(
-    90deg,
-    rgba(199, 153, 204, 1) 0%,
-    rgba(177, 77, 169, 1) 50%,
-    rgba(199, 153, 204, 1) 100%
-  );
+  background: #d1574e;
+  border: 1px solid #d1574e;
+  text-transform: uppercase;
 }
 
 .form button:hover {
   cursor: pointer;
 }
 
-
-@media(max-width:500px){
-  .container{
-    margin: 20px;
+@media (max-width: 960px) {
+  .form {
+    padding: 25px 35px;
+  }
+  article {
+    flex-direction: column;
   }
 
-  
+  .information {
+    width: 350px;
+  }
+
+  .container {
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  article {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .information {
+    max-width: 90vw;
+  }
+
+  .container {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 350px) {
+  .form {
+    padding: 25px 25px;
+  }
+
+  .information {
+    padding: 20px;
+  }
 }
