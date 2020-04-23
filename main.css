@@ -18,6 +18,8 @@ article {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  margin-bottom: 150px;
+  
 }
 
 .information {
@@ -45,6 +47,7 @@ article {
   overflow: hidden;
   width: 350px;
   color: rgb(29, 28, 28);
+  
 }
 
 .form {
